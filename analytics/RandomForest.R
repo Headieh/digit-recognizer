@@ -1,4 +1,5 @@
 #Random Forest
+set.seed(seedval)
 classifier = randomForest(l_train ~.,
                           data=pc_train,
                           ntree=150,
@@ -16,5 +17,5 @@ cat("classifier Accuracy on Test set:",
     cf$overall['Accuracy'][[1]],"\n")
 
 #plot some misclassifications
-title = "Random Forest Missclassifications"
+title = "Random Forest Misclassifications"
 missclassLook(3, 3, pred, l_valid, o_valid, title)

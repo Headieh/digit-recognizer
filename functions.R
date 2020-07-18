@@ -1,5 +1,17 @@
 #functions
-library(randomForest)
+listofpackages <- c("caret", 
+                    "e1071",
+                    "nnet", #nnet
+                    "MASS",#QDA
+                    "class",#knn
+                    "RColorBrewer",
+                    "randomForest")
+
+new.packages <- listofpackages[!(listofpackages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+lapply(listofpackages, require, character.only = TRUE)
+
+
 
 getImage =
   function(vals)

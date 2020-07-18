@@ -1,4 +1,5 @@
 #Neural Networks
+set.seed(seedval)
 classifier = nnet(pc_train,
                   class.ind(l_train),
                   size=150,
@@ -17,7 +18,7 @@ acc = mean(pred == l_valid)
 cat("classifier Accuracy on Test set:", acc,"\n")
 
 #plot some misclassifications
-title = "NN Missclassifications"
+title = "NN Misclassifications"
 missclassLook(3, 3, pred, l_valid, o_valid, title)
 
 

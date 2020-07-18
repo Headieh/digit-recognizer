@@ -21,6 +21,7 @@ pc_tr = as.matrix(trainingdata[,names(trainingdata) != "label"]) %*% eig$vectors
 l_tr = as.factor(trainingdata[,"label"])
 
 cat('SPLITING TRAIN DATA FOR VALIDATION\n')
+set.seed(seedval)
 splittrain = sample(nrow(pc_tr), nrow(pc_tr)*0.75)
 pc_train = pc_tr[splittrain,]
 o_train = trainingdata[splittrain,]

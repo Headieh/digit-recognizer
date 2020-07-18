@@ -1,8 +1,8 @@
-## Digit Recognizer Project
+# Digit Recognizer Project
 
-# See analysis here:
+##See analysis here: https://github.com/Headieh/digit-recognizer/blob/master/digit-recognizer-analysis.pdf
 
-#To execute the code:
+##To execute the code:
 To run this program fork the project in github and clone it to your local computer.
 
 (If you need help with this here is a helpful link: https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
